@@ -58,8 +58,8 @@ run_analysis <- function(){
   print("grouped by activity and subject")
   library(data.table)
   dataDT <- data.table(data)
-  avgData<- dataDT[, lapply(.SD, mean), by=c("subjectId", "activity")]
-  write.table(avgData, "independant_tidy_data_with_avg.txt", row.names = FALSE)
+  averageData<- dataDT[, lapply(.SD, mean), by=c("subjectId", "activity")]
+  write.table(averageData, "independant_tidy_data_with_avg.txt", row.names = FALSE)
   print("data set 'independant_tidy_data_with_avg.txt' created.")
   print("run_analysis.R has completed successfully!")
 }
