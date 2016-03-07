@@ -18,10 +18,9 @@ Load the training data set, test data set and label data sets for the features a
 
 ###Merge Data
 1. Use `rbind` to combine the test and training data tables.
-2. Use `gsub` to only include the mean and standard deviation variables in the data tables.
-3. Replace activity IDs with the activity labels.
-4. Use `cbind` to combine the data frames to produce one data frame containing the subjects, measurements and activities.
-5. Create "train_test_tidy_data.txt" to show the merged data.
+2. Replace activity IDs with the activity labels.
+3. Use `cbind` to combine the data frames to produce one data frame containing the subjects, measurements and activities.
+4. Create "train_test_tidy_data.txt" to show the merged data.
 
 ###Create independant data set
 1. Create another data table and then applied the mean and standard deviation calculations across the groups.
